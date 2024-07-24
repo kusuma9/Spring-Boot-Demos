@@ -1,13 +1,13 @@
-package com.kusuma.rest_demo_db;
+package com.kusuma.demoForJpa;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class RestDemoDbApplication {
+public class DemoForJpaApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(RestDemoDbApplication.class, args);
+		SpringApplication.run(DemoForJpaApplication.class, args);
 	}
 
 }
