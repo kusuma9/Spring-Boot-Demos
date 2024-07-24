@@ -1,10 +1,11 @@
-package com.kusuma.restdemo.controller;
+package com.kusuma.restdemodb.controller;
 
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.kusuma.restdemo.model.Student;
+import com.kusuma.restdemodb.model.Student;
+
 
 @RestController
 public class StudentController {

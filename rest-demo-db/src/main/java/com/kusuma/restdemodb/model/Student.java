@@ -1,11 +1,13 @@
-package com.kusuma.restdemo.model;
+package com.kusuma.restdemodb.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
 @Entity
+@Table(name="STUDENT", schema="student_info")
 public class Student {
 
 	@Id
@@ -14,6 +16,20 @@ public class Student {
 	private String StudentName;
 	private String StudentAddress;
 	private String StudentPhone;
+	
+	public Student() {
+		super();
+		
+	}
+	
+	public Student(int studentId, String studentName, String studentAddress, String studentPhone) {
+		super();
+		StudentId = studentId;
+		StudentName = studentName;
+		StudentAddress = studentAddress;
+		StudentPhone = studentPhone;
+	}
+	
 	public int getStudentId() {
 		return StudentId;
 	}
@@ -38,17 +54,8 @@ public class Student {
 	public void setStudentPhone(String studentPhone) {
 		StudentPhone = studentPhone;
 	}
-	public Student(int studentId, String studentName, String studentAddress, String studentPhone) {
-		super();
-		StudentId = studentId;
-		StudentName = studentName;
-		StudentAddress = studentAddress;
-		StudentPhone = studentPhone;
-	}
-	public Student() {
-		super();
-		
-	}
+	
+	
 	@Override
 	public String toString() {
 		return "Student [StudentId=" + StudentId + ", StudentName=" + StudentName + ", StudentAddress=" + StudentAddress
