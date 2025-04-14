@@ -17,8 +17,8 @@ public class CustomerAPIservice {
 	
 	@GetMapping("{CustomerId}")
 	public Customer getCustomerDetails(String CustomerId) {
-		//return new Customer("C1", "Customer 1", "Address One", "Phone 1");
-		return customer;
+		return new Customer("C1", "Customer 1", "Address One", "Phone 1");
+		//return customer;
 	}
 	
 	@PostMapping
